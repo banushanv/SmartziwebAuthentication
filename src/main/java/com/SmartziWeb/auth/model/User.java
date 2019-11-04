@@ -4,13 +4,13 @@ import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table(name = "users")
+@Table(schema = "UserTypes", name = "UserTypes")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String firstname;
+    private String username;
     
     private String lastname;
     
@@ -46,12 +46,12 @@ private String password;
 		this.id = id;
 	}
 
-	public String getFirstname() {
-		return firstname;
+	public String getUsername() {
+		return username;
 	}
 
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setUsername(String username) {
+		this.username = username;
 	}
 
 	public String getLastname() {

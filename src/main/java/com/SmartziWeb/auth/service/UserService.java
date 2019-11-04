@@ -5,5 +5,5 @@ import com.SmartziWeb.auth.model.User;
 public interface UserService {
     void save(User user);
 
-    User findByFirstname(String firstname);
+    User findByFirstname(String username);
 }
